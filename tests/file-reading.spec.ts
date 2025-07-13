@@ -9,8 +9,8 @@ test.describe.serial('File Reading Tests', () => {
   let browser: Browser;
   let context: BrowserContext;
   let page: Page;
-  let currentAccessCode: string = ''; // Global variable to store the current access code
-  let shouldSkipRemainingTests: boolean = false; // Flag to control test execution
+  let currentAccessCode: string = '';
+  let shouldSkipRemainingTests: boolean = false;
 
   test.beforeAll(async ({ browser: testBrowser }) => {
     const logger = createLogger('File Reading Setup');
